@@ -62,4 +62,8 @@ vim.keymap.set('n', 'N', 'Nzzzv')
 -- vim.keymap.set('n', '<leader>r.', vim.cmd.Ex)
 -- Go back to Oi
 vim.keymap.set('n', '<leader>r.', vim.cmd.Oil)
+
+-- Press Enter to add emtpy line below or above cursor
+vim.keymap.set('n', '<leader><CR>', 'o<Esc>0D')
+vim.keymap.set('n', '<leader><S-CR>', 'O<Esc>0D')
 -- vim: ts=2 sts=2 sw=2 et
