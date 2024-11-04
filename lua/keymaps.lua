@@ -60,10 +60,11 @@ vim.keymap.set('n', 'N', 'Nzzzv')
 
 -- Go back to netrw
 -- vim.keymap.set('n', '<leader>r.', vim.cmd.Ex)
--- Go back to Oi
-vim.keymap.set('n', '<leader>r.', vim.cmd.Oil)
+
+-- Go back to Oil
+vim.keymap.set('n', '<leader>r.', vim.cmd.Oil, { desc = 'Open Oil' })
 
 -- Press Enter to add emtpy line below or above cursor
-vim.keymap.set('n', '<leader><CR>', 'o<Esc>0D')
-vim.keymap.set('n', '<leader><S-CR>', 'O<Esc>0D')
+vim.keymap.set('n', '<leader><CR>', 'o<Esc>0D', { desc = 'Append empty line below cursor' })
+vim.keymap.set('n', '<leader><S-CR>', 'O<Esc>0D', { desc = 'Append empty line above cursor' })
 -- vim: ts=2 sts=2 sw=2 et
