@@ -174,7 +174,7 @@ return {
             python = {
               analysis = {
                 -- Turn off annoying None type checking
-                -- typeCheckingMode = 'off',
+                typeCheckingMode = 'off',
               },
             },
           },
